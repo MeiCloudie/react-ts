@@ -1,11 +1,12 @@
 import React from "react";
 import Todo from '../models/todo'
 import TodoItem from "./TodoItem";
+import classes from './Todos.module.css';
 
 // React >= 18: https://stackoverflow.com/questions/59106742/typescript-error-property-children-does-not-exist-on-type-reactnode
 const Todos: React.FC<{ items: Todo[] }> = (props) => {
   return (
-    <ul>
+    <ul className={classes.todos}>
       {/* <li>Learn React</li>
       <li>Learn TypeScript</li> */}
 
