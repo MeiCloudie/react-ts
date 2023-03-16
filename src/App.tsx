@@ -23,6 +23,7 @@ function App() {
 
   return (
     <div>
+      <h1>Test Text</h1>
       <NewTodo onAddTodo={addTodoHandler} />
       <Todos items={todos} onRemoveTodo={removeTodoHandler} />
     </div>
